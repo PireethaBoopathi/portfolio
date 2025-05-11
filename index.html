@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🍽️ Simple Food Order</title>
+</head>
+<body>
+  <h1>🍽️ Simple Food Order</h1>
+
+  <div class="menu">
+    <div>
+      🍕 Pizza - ₹150 
+      <input type="number" id="pizzaQty" value="0" min="0">
+      <button onclick="addToCart('Pizza', 150, 'pizzaQty')">Add to Cart</button>
+    </div>
+
+    <div>
+      🍔 Burger - ₹100 
+      <input type="number" id="burgerQty" value="0" min="0">
+      <button onclick="addToCart('Burger', 100, 'burgerQty')">Add to Cart</button>
+    </div>
+
+    <div>
+      🥤 Coke - ₹50 
+      <input type="number" id="cokeQty" value="0" min="0">
+      <button onclick="addToCart('Coke', 50, 'cokeQty')">Add to Cart</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="cart"></div>
+  <div id="total"></div>
+
+  <button onclick="confirmOrder()">Confirm Order</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
